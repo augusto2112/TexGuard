@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1920</width>
+    <height>724</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1920</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCadastrar">
+    <property name="title">
+     <string>Cadastrar...</string>
+    </property>
+    <addaction name="actionCadastroVendaAtrelada"/>
+    <addaction name="actionCadastroVendaIndependente"/>
+    <addaction name="actionCadastroCliente"/>
+    <addaction name="separator"/>
+    <addaction name="actionImprimirComissoes"/>
+    <addaction name="actionMarcarComoPagas"/>
+    <addaction name="actionGerarRelatorioDeVendas"/>
+   </widget>
+   <addaction name="menuCadastrar"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <widget class="QToolBar" name="toolBar">
+   <property name="windowTitle">
+    <string>toolBar</string>
+   </property>
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+   <addaction name="actionPedidoTeflon"/>
+   <addaction name="actionPedidoPrimaLinea"/>
+   <addaction name="actionPedidoPrimaLineaDetalhe"/>
+   <addaction name="actionAplicacoes"/>
+   <addaction name="actionComissoes"/>
+   <addaction name="actionPagamentos"/>
+   <addaction name="actionClientes"/>
+   <addaction name="actionEnderecos"/>
+   <addaction name="actionProdutos"/>
+  </widget>
+  <action name="actionCadastroVendaAtrelada">
+   <property name="text">
+    <string>Venda Atrelada</string>
+   </property>
+  </action>
+  <action name="actionCadastroCliente">
+   <property name="text">
+    <string>Cliente</string>
+   </property>
+  </action>
+  <action name="actionComissoes">
+   <property name="text">
+    <string>Comissões</string>
+   </property>
+  </action>
+  <action name="actionAplicacoes">
+   <property name="text">
+    <string>Aplicações</string>
+   </property>
+  </action>
+  <action name="actionClientes">
+   <property name="text">
+    <string>Clientes</string>
+   </property>
+  </action>
+  <action name="actionEnderecos">
+   <property name="text">
+    <string>Endereços</string>
+   </property>
+  </action>
+  <action name="actionPagamentos">
+   <property name="text">
+    <string>Pagamentos</string>
+   </property>
+  </action>
+  <action name="actionPedidoPrimaLinea">
+   <property name="text">
+    <string>Pedido Prima Linea</string>
+   </property>
+  </action>
+  <action name="actionPedidoTeflon">
+   <property name="text">
+    <string>Pedido Teflon</string>
+   </property>
+  </action>
+  <action name="actionPedidoPrimaLineaDetalhe">
+   <property name="text">
+    <string>Pedido Prima Linea Detalhe</string>
+   </property>
+  </action>
+  <action name="actionProdutos">
+   <property name="text">
+    <string>Produtos</string>
+   </property>
+  </action>
+  <action name="actionImprimirComissoes">
+   <property name="text">
+    <string>Imprimir Comissões</string>
+   </property>
+  </action>
+  <action name="actionCadastroVendaIndependente">
+   <property name="text">
+    <string>Venda Independente</string>
+   </property>
+  </action>
+  <action name="actionMarcarComoPagas">
+   <property name="text">
+    <string>Marcar como Pagas</string>
+   </property>
+  </action>
+  <action name="actionGerarRelatorioDeVendas">
+   <property name="text">
+    <string>Gerar relatório de Vendas</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

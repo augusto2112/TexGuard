@@ -1,0 +1,90 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'cadastro_pagamento.ui'
+#
+# Created: Thu May  5 16:18:02 2016
+#      by: pyside-uic 0.2.15 running on PySide 1.2.1
+#
+# WARNING! All changes made in this file will be lost!
+
+from PySide import QtCore, QtGui
+
+class Ui_CadastroPagamentoDialog(object):
+    def setupUi(self, CadastroPagamentoDialog):
+        CadastroPagamentoDialog.setObjectName("CadastroPagamentoDialog")
+        CadastroPagamentoDialog.resize(455, 323)
+        self.gridLayout = QtGui.QGridLayout(CadastroPagamentoDialog)
+        self.gridLayout.setObjectName("gridLayout")
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setSizeConstraint(QtGui.QLayout.SetMinimumSize)
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.label = QtGui.QLabel(CadastroPagamentoDialog)
+        sizePolicy = QtGui.QSizePolicy(QtGui.QSizePolicy.Preferred, QtGui.QSizePolicy.Maximum)
+        sizePolicy.setHorizontalStretch(0)
+        sizePolicy.setVerticalStretch(0)
+        sizePolicy.setHeightForWidth(self.label.sizePolicy().hasHeightForWidth())
+        self.label.setSizePolicy(sizePolicy)
+        self.label.setObjectName("label")
+        self.horizontalLayout.addWidget(self.label)
+        self.comboBox = QtGui.QComboBox(CadastroPagamentoDialog)
+        self.comboBox.setObjectName("comboBox")
+        self.horizontalLayout.addWidget(self.comboBox)
+        self.gridLayout.addLayout(self.horizontalLayout, 0, 0, 1, 1)
+        self.primeiroHorizontalLayout = QtGui.QHBoxLayout()
+        self.primeiroHorizontalLayout.setObjectName("primeiroHorizontalLayout")
+        self.primeiroLabel = QtGui.QLabel(CadastroPagamentoDialog)
+        self.primeiroLabel.setObjectName("primeiroLabel")
+        self.primeiroHorizontalLayout.addWidget(self.primeiroLabel)
+        self.primeiroLineEdit = QtGui.QLineEdit(CadastroPagamentoDialog)
+        self.primeiroLineEdit.setObjectName("primeiroLineEdit")
+        self.primeiroHorizontalLayout.addWidget(self.primeiroLineEdit)
+        self.primeiroDateEdit = QtGui.QDateEdit(CadastroPagamentoDialog)
+        self.primeiroDateEdit.setObjectName("primeiroDateEdit")
+        self.primeiroHorizontalLayout.addWidget(self.primeiroDateEdit)
+        self.gridLayout.addLayout(self.primeiroHorizontalLayout, 1, 0, 1, 1)
+        self.segundoHorizontalLayout = QtGui.QHBoxLayout()
+        self.segundoHorizontalLayout.setObjectName("segundoHorizontalLayout")
+        self.segundoLabel = QtGui.QLabel(CadastroPagamentoDialog)
+        self.segundoLabel.setObjectName("segundoLabel")
+        self.segundoHorizontalLayout.addWidget(self.segundoLabel)
+        self.segundoLineEdit = QtGui.QLineEdit(CadastroPagamentoDialog)
+        self.segundoLineEdit.setObjectName("segundoLineEdit")
+        self.segundoHorizontalLayout.addWidget(self.segundoLineEdit)
+        self.segundoDateEdit = QtGui.QDateEdit(CadastroPagamentoDialog)
+        self.segundoDateEdit.setObjectName("segundoDateEdit")
+        self.segundoHorizontalLayout.addWidget(self.segundoDateEdit)
+        self.gridLayout.addLayout(self.segundoHorizontalLayout, 2, 0, 1, 1)
+        self.terceiroHorizontalLayout = QtGui.QHBoxLayout()
+        self.terceiroHorizontalLayout.setObjectName("terceiroHorizontalLayout")
+        self.terceiroLabel = QtGui.QLabel(CadastroPagamentoDialog)
+        self.terceiroLabel.setObjectName("terceiroLabel")
+        self.terceiroHorizontalLayout.addWidget(self.terceiroLabel)
+        self.terceiroLineEdit = QtGui.QLineEdit(CadastroPagamentoDialog)
+        self.terceiroLineEdit.setInputMask("")
+        self.terceiroLineEdit.setObjectName("terceiroLineEdit")
+        self.terceiroHorizontalLayout.addWidget(self.terceiroLineEdit)
+        self.terceiroDateEdit = QtGui.QDateEdit(CadastroPagamentoDialog)
+        self.terceiroDateEdit.setObjectName("terceiroDateEdit")
+        self.terceiroHorizontalLayout.addWidget(self.terceiroDateEdit)
+        self.gridLayout.addLayout(self.terceiroHorizontalLayout, 3, 0, 1, 1)
+        self.buttonBox = QtGui.QDialogButtonBox(CadastroPagamentoDialog)
+        self.buttonBox.setOrientation(QtCore.Qt.Horizontal)
+        self.buttonBox.setStandardButtons(QtGui.QDialogButtonBox.Cancel|QtGui.QDialogButtonBox.Ok)
+        self.buttonBox.setObjectName("buttonBox")
+        self.gridLayout.addWidget(self.buttonBox, 4, 0, 1, 1)
+
+        self.retranslateUi(CadastroPagamentoDialog)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("accepted()"), CadastroPagamentoDialog.accept)
+        QtCore.QObject.connect(self.buttonBox, QtCore.SIGNAL("rejected()"), CadastroPagamentoDialog.reject)
+        QtCore.QMetaObject.connectSlotsByName(CadastroPagamentoDialog)
+
+    def retranslateUi(self, CadastroPagamentoDialog):
+        CadastroPagamentoDialog.setWindowTitle(QtGui.QApplication.translate("CadastroPagamentoDialog", "Dialog", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("CadastroPagamentoDialog", "Selecione o tipo de pagamento", None, QtGui.QApplication.UnicodeUTF8))
+        self.primeiroLabel.setText(QtGui.QApplication.translate("CadastroPagamentoDialog", "Primeiro Pagamento:", None, QtGui.QApplication.UnicodeUTF8))
+        self.primeiroDateEdit.setDisplayFormat(QtGui.QApplication.translate("CadastroPagamentoDialog", "d/M/yy", None, QtGui.QApplication.UnicodeUTF8))
+        self.segundoLabel.setText(QtGui.QApplication.translate("CadastroPagamentoDialog", "Segundo Pagamento:", None, QtGui.QApplication.UnicodeUTF8))
+        self.segundoDateEdit.setDisplayFormat(QtGui.QApplication.translate("CadastroPagamentoDialog", "d/M/yy", None, QtGui.QApplication.UnicodeUTF8))
+        self.terceiroLabel.setText(QtGui.QApplication.translate("CadastroPagamentoDialog", "Terceiro Pagamento:", None, QtGui.QApplication.UnicodeUTF8))
+        self.terceiroDateEdit.setDisplayFormat(QtGui.QApplication.translate("CadastroPagamentoDialog", "d/M/yy", None, QtGui.QApplication.UnicodeUTF8))
+
