@@ -1,7 +1,7 @@
 # TexGuard
 
 
-Software used for the management of my company deceased Texguard.
+Software used for the management of my former company Texguard.
 
 It was used to manage all the financial and operational area of the company.
 
